@@ -47,7 +47,8 @@ int main(int argc, char * argv[])
 
     width = diagnostic[0].size();
     for(int bit = 0; bit < width; bit++) {
-        int c0 = 0, mc;
+        size_t c0 = 0;
+        int mc;
         for(string number : diagnostic)
             if(number.at(bit) == '0') c0++;
         mc = c0 > diagnostic.size() / 2 ? 0 : 1;
