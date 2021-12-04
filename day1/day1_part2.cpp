@@ -5,7 +5,8 @@
 
 using namespace std;
 
-vector<int> read_file(string filename) {
+vector<int> read_file(string filename)
+{
     vector<int> parsed;
     fstream file;
 
